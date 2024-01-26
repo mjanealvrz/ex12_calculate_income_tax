@@ -6,9 +6,6 @@
 
 # Pseudocode
 
-
-
-
 # Create calculate income tax function with conditional statements
 def calculate_income_tax(income):
 
@@ -40,13 +37,14 @@ def calculate_income_tax(income):
     return tax_payable
 
 # Set taxable income to variable
-taxable_income = 45000       
+taxable_income = 45000   
+
 # Print the the given taxable income
 print("Given taxable income is $", taxable_income)
+
 # Call function to calculate income tax
 tax_payable = calculate_income_tax(taxable_income)
 # Print result
-print("For a total annual income of $", taxable_income, ", the annual tax payable is: $", tax_payable)   
-
+print("For a total taxable  income of $", taxable_income, ", the annual tax payable is $", int(tax_payable),".")
 
 
