@@ -8,13 +8,25 @@
 
 # Set taxable income to variable
 taxable_income = 45000
+
 # Print the the given taxable income
 print("Given taxable income is ", taxable_income)
+
 # Create calculate income tax function with conditional statements
+def calculate_income_tax(income):
+
     # Set the first  income tax payable
+    first_income_tax = 10000
+
     # Set the second income tax payable
-    # if taxable_income <= first income_tax_payable then
-        # set income tax to taxable_payable * 0
+    second_income_tax = 20000
+    
+    # if income <= first income_tax then
+    if income <= first_income_tax:
+        # set income_amount  to income * 0
+        income_amount = income * 0
+
+        
     # else if taxable_income <=  second income_tax_payable then
         # set second_tax to income -10000
         # set tax_payable to second_tax * 10/100
