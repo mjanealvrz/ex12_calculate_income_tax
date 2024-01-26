@@ -26,15 +26,22 @@ def calculate_income_tax(income):
         # set income_amount  to income * 0
         income_amount = income * 0
 
-        
     # else if taxable_income <=  second income_tax_payable then
+    elif income <= second_income_tax:
         # set second_tax to income -10000
+        second_tax = income - 10000
         # set tax_payable to second_tax * 10/100
+        tax_payable = second_tax * 10/100
     # else
+    else:
         # first 10, 000, set tax_payable to 0
+        tax_payable = 0
         # next 10,000 10% tax, set tax_payable to tax_payable + 10000 * 10/100
+        tax_payable = tax_payable = 10000 * 10/ 100
         # remaining 20% tax, SET tax_payable TO tax_payable + (income - 20000) * 20 / 100
+        tax_payable = tax_payable + (income-20000) * 20 / 100
 # Print result
+ print("For a total annual income of $", taxable_income, ", the annual tax payable is: $", tax_payable)   
 
 
 
