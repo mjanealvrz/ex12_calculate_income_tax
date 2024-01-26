@@ -7,7 +7,9 @@
 # Pseudocode
 
 # Set taxable income to variable
+taxable_income = 45000
 # Print the the given taxable income
+print("Given taxable income is ", taxable_income)
 # Create calculate income tax function with conditional statements
     # Set the first  income tax payable
     # Set the second income tax payable
@@ -23,4 +25,4 @@
 # Print result
 
 
-(first_slab_limit * 0%) + ((taxable_income - first_slab_limit) * 10%)
+
